@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CVehicleMetadataMgr>
+  <ClipSetMaps />
+  <VehicleCoverBoundOffsetInfos />
+  <VehicleExtraPointsInfos />
+  <VehicleDriveByInfos />
+  <VehicleSeatInfos>
+  	<Item type="CVehicleSeatInfo">
+      <Name>SEAT_COACHRV_REAR_RIGHT</Name>
+      <SeatBoneName>seat_pside_r</SeatBoneName>
+      <ShuffleLink />
+      <RearSeatLink />
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags>IsFrontSeat</SeatFlags>
+      <HairScale value="0.000000" />
+    </Item>
+	<Item type="CVehicleSeatInfo">
+      <Name>SEAT_COACHRV_REAR_LEFT</Name>
+      <SeatBoneName>seat_dside_r</SeatBoneName>
+      <ShuffleLink />
+      <RearSeatLink />
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags>IsFrontSeat</SeatFlags>
+      <HairScale value="0.000000" />
+    </Item>
+	<Item type="CVehicleSeatInfo">
+      <Name>SEAT_COACHRV_REAR_LEFT_1</Name>
+      <SeatBoneName>seat_dside_r1</SeatBoneName>
+      <ShuffleLink />
+      <RearSeatLink />
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags>IsFrontSeat</SeatFlags>
+      <HairScale value="0.000000" />
+    </Item>
+	<Item type="CVehicleSeatInfo">
+      <Name>SEAT_COACHRV_REAR_LEFT_2</Name>
+      <SeatBoneName>seat_dside_r2</SeatBoneName>
+      <ShuffleLink />
+      <RearSeatLink />
+      <DefaultCarTask>TASK_DRIVE_WANDER</DefaultCarTask>
+      <SeatFlags>IsFrontSeat</SeatFlags>
+      <HairScale value="0.000000" />
+    </Item>
+  </VehicleSeatInfos>
+  <VehicleSeatAnimInfos>
+    <Item type="CVehicleSeatAnimInfo">
+      <Name>SEAT_ANIM_COACHRV_REAR</Name>
+      <DriveByInfo ref="NULL" />
+      <InsideClipSetMap ref="INSIDE_CLIPSET_MAP_BUS_PASSENGER" />
+      <PanicClipSet>clipset@veh@bus@passenger@rps@idle_panic</PanicClipSet>
+      <AgitatedClipSet />
+	  <DuckedClipSet>clipset@veh@bus@passenger@common@idle_duck</DuckedClipSet>
+      <FemaleClipSet />
+      <LowLODIdleAnim>BUS_PASSENGER</LowLODIdleAnim>
+      <SeatAmbientContext>IN_TOURBUS</SeatAmbientContext>
+      <InVehicleMoveNetwork>VEHICLE_DEFAULT</InVehicleMoveNetwork>
+      <SeatAnimFlags>CannotBeJacked UseStandardInVehicleAnims HasPanicAnims DisableAbnormalExits</SeatAnimFlags>
+      <SteeringSmoothing value="0.100000" />
+      <ExitToAimInfoName />
+      <MaleGestureClipSetId />
+      <FemaleGestureClipSetId />
+    </Item>
+  </VehicleSeatAnimInfos>
+  <VehicleEntryPointInfos>
+   <Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_COACHRV_REAR_LEFT</Name>
+      <DoorBoneName />
+      <SecondDoorBoneName />
+      <DoorHandleBoneName />
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+		<Item ref="SEAT_COACHRV_REAR_LEFT" />
+		<Item ref="SEAT_COACHRV_REAR_LEFT_1" />
+		<Item ref="SEAT_COACHRV_REAR_LEFT_2" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>MPWarpInOut SPEntryAllowedAlso</Flags>
+      <BlockJackReactionSides />
+    </Item>
+	<Item type="CVehicleEntryPointInfo">
+      <Name>ENTRY_POINT_NO_SHUFFLE_MP_WARP_COACHRV</Name>
+      <DoorBoneName />
+      <SecondDoorBoneName />
+      <DoorHandleBoneName />
+      <WindowId>INVALID</WindowId>
+      <VehicleSide>SIDE_RIGHT</VehicleSide>
+      <AccessableSeats>
+        <Item ref="SEAT_COACHRV_REAR_RIGHT" />
+      </AccessableSeats>
+      <VehicleExtraPointsInfo ref="NULL" />
+      <Flags>MPWarpInOut SPEntryAllowedAlso</Flags>
+      <BlockJackReactionSides />
+    </Item>
+  </VehicleEntryPointInfos>
+  <VehicleEntryPointAnimInfos>
+  	<Item type="CVehicleEntryPointAnimInfo">
+      <Name>ENTRY_POINT_ANIM_COACHRV_MP_WARP_REAR_LEFT</Name>
+      <CommonClipSetMap ref="COMMON_CLIPSET_MAP_TRUCK_LEFT" />
+      <EntryClipSetMap ref="ENTRY_CLIPSET_MAP_GRANGER_REAR_LEFT" />
+      <ExitClipSetMap ref="EXIT_CLIPSET_MAP_GRANGER_REAR_LEFT" />
+      <AlternateTryLockedDoorClipId />
+      <AlternateForcedEntryClipId />
+      <AlternateJackFromOutSideClipId />
+      <AlternateBeJackedFromOutSideClipId />
+      <AlternateEntryPointClipSetId />
+      <EnterVehicleMoveNetwork>ENTER_VEHICLE_STD</EnterVehicleMoveNetwork>
+      <EntryTranslation x="1.765000" y="2.870000" z="-0.270000" />
+      <OpenDoorTranslation x="0.000000" y="0.000000" />
+      <OpenDoorHeadingChange value="1.570000" />
+      <EntryHeadingChange value="-1.570000" />
+      <ExtraZForWaterEntry value="0.000000" />
+      <EntryPointFlags>UseVehicleRelativeEntryPosition JackIncludesGetIn NavigateToWarpEntryPoint JackVariationsIncludeGetIn DeadJackIncludesGetIn</EntryPointFlags>
+      <EntryAnimVariations ref="NULL" />
+    </Item>
+  </VehicleEntryPointAnimInfos>
+  <VehicleExplosionInfos />
+  <VehicleLayoutInfos>
+    <Item type="CVehicleLayoutInfo">
+      <Name>LAYOUT_COACHRV</Name>
+      <Seats>
+        <Item>
+          <SeatInfo ref="SEAT_STANDARD_NO_SHUFFLE_FRONT_LEFT" />
+          <SeatAnimInfo ref="SEAT_ANIM_COACH_FRONT_LEFT" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_STANDARD_NO_SHUFFLE_FRONT_RIGHT" />
+          <SeatAnimInfo ref="SEAT_ANIM_COACH_REAR_RIGHT" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_COACHRV_REAR_RIGHT" />
+          <SeatAnimInfo ref="SEAT_ANIM_COACHRV_REAR" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_COACHRV_REAR_LEFT" />
+          <SeatAnimInfo ref="SEAT_ANIM_COACHRV_REAR" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_COACHRV_REAR_LEFT_1" />
+          <SeatAnimInfo ref="SEAT_ANIM_COACHRV_REAR" />
+        </Item>
+        <Item>
+          <SeatInfo ref="SEAT_COACHRV_REAR_LEFT_2" />
+          <SeatAnimInfo ref="SEAT_ANIM_COACHRV_REAR" />
+        </Item>
+      </Seats>
+      <EntryPoints>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_BUS_FRONT_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_COACH_FRONT_LEFT" />
+        </Item>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_BUS_FRONT_RIGHT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_COACH_FRONT_RIGHT" />
+        </Item>
+		<Item>
+          <EntryPointInfo ref="ENTRY_POINT_NO_SHUFFLE_MP_WARP_COACHRV" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_COACHRV_MP_WARP_REAR_LEFT" />
+        </Item>
+        <Item>
+          <EntryPointInfo ref="ENTRY_POINT_COACHRV_REAR_LEFT" />
+          <EntryPointAnimInfo ref="ENTRY_POINT_ANIM_COACH_REAR_LEFT" />
+        </Item>
+      </EntryPoints>
+      <LayoutFlags>StreamAnims UseLeanSteerAnims UseFinerAlignTolerance WaitForRerservationInGroup</LayoutFlags>
+      <BicycleInfo ref="NULL" />
+      <HandsUpClipSetId>busted_vehicle_std</HandsUpClipSetId>
+      <SteeringWheelOffset x="0.000000" y="0.350000" z="0.320000" />
+	  <MaxXAcceleration value="4.00000" />
+	  <BodyLeanXApproachSpeed value="5.00000" />
+	  <BodyLeanXSmallDelta value="0.30000" />
+    </Item>
+  </VehicleLayoutInfos>
+</CVehicleMetadataMgr>
